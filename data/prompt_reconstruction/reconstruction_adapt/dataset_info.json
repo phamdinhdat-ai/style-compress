@@ -1,0 +1,56 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "bbc-news",
+  "dataset_size": 5088629,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/SetFit/bbc-news@9c31f7087a8c225be8b4c420d70216ef1f121eb0/train.jsonl": {
+      "num_bytes": 2869756,
+      "checksum": null
+    },
+    "hf://datasets/SetFit/bbc-news@9c31f7087a8c225be8b4c420d70216ef1f121eb0/test.jsonl": {
+      "num_bytes": 2284560,
+      "checksum": null
+    }
+  },
+  "download_size": 5154316,
+  "features": {
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "label": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "label_text": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 10242945,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 2833525,
+      "num_examples": 1225,
+      "dataset_name": "bbc-news"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 2255104,
+      "num_examples": 1000,
+      "dataset_name": "bbc-news"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

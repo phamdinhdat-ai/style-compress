@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Table 1 Reproduction: Performance comparison between Style-Compress styles and baseline methods.
-This script specifically reproduces the results from Table 1 in the Style-Compress paper.
-"""
-
 import os
 import sys
 import time
@@ -92,10 +86,10 @@ class Table1Reproduction:
         
         try:
             # Dataset paths from get_data.py
-            reconstruction_path = "style_compress/data/prompt_reconstruction/reconstruction_test"
-            summarization_path = "style_compress/data/text_summarization/text_summarization_test"
-            multi_hop_qa_path = "style_compress/data/multi_hop_QA/multi_hop_qa_test"
-            cot_reasoning_path = "style_compress/data/cot_reasoning/cot_gsm8k_test"
+            reconstruction_path = "data/prompt_reconstruction/reconstruction_test"
+            summarization_path = "data/text_summarization/text_summarization_test"
+            multi_hop_qa_path = "data/multi_hop_QA/multi_hop_qa_test"
+            cot_reasoning_path = "data/cot_reasoning/cot_gsm8k_test"
             
             # 1. BBC News dataset for prompt reconstruction
             print("Loading BBC News dataset for reconstruction task...")
