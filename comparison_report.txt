@@ -1,0 +1,27 @@
+Style-Compress Table 1 Reproduction
+================================================================================
+
+COMPRESSION RATIO: 0.25
+================================================================================
+
+Style           Rouge1     Rouge2     RougeL     BERTScore  Rouge1     Rouge2     RougeL     BERTScore  EM         F1         EM         
+--------------------------------------------------------------------------------
+vanilla         0.333      0.234      0.302      0.302      1.000      1.000      1.000      1.000      0.000      0.000      0.000      
+extractive      0.240      0.077      0.210      0.210      1.000      1.000      1.000      1.000      0.000      0.000      0.000      
+for_reconstruction 0.222      0.137      0.222      0.222      1.000      1.000      1.000      1.000      0.000      0.000      0.000      
+for_summarization 0.226      0.108      0.210      0.210      1.000      1.000      1.000      1.000      0.000      0.000      0.000      
+for_qa          0.046      0.000      0.031      0.031      1.000      1.000      1.000      1.000      0.000      0.000      0.000      
+for_reasoning   0.090      0.031      0.076      0.076      1.000      1.000      1.000      1.000      0.000      0.000      0.000      
+baselines:
+selective-context 0.403      0.385      0.403      0.403      1.000      1.000      1.000      1.000      0.000      0.000      0.000      
+
+Table: Results at compression ratio 0.25
+
+================================================================================
+
+
+Note: All results are based on the datasets specified in the paper:
+- Reconstruction: BBC News dataset
+- Summarization: CNN/Daily-Mail dataset
+- Multi-hop QA: HotpotQA dataset
+- CoT reasoning: GSM8k dataset
